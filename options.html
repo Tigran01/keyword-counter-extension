@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keyword Counter Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 5px 0;
+    }
+    button {
+      margin-top: 10px;
+    }
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .toggle-container input {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Manage Keywords</h3>
+  <input type="text" id="wordInput" placeholder="Add a keyword">
+  <button id="addWordButton">Add Keyword</button>
+  <ul id="wordList"></ul>
+  <div class="toggle-container">
+    <input type="checkbox" id="caseSensitiveToggle">
+    <label for="caseSensitiveToggle">Case Sensitive</label>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
